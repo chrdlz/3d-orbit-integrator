@@ -63,21 +63,6 @@ def astrConstant(n: int)->float:
                constant, use an unused identifier.
            - DO NOT add constants that can be easily computed starting form
                other ones (avoid redundancy).
-           Contact the author for modifications.
-    
-     INPUT:
-       in      Vector of identifiers of required constants.
-    
-     OUTPUT:
-       out     Vector of constants.
-    
-     EXAMPLE:
-       astroConstants([2, 4, 26])
-          Returns a row vector in which there is the value of the AU, the Sun
-          planetary constant and the mean radius of Saturn.
-    
-       astroConstants(10 + [1:9])
-          Returns a row vector with the planetary constant of each planet.
     
      REFERENCES:
        - DITAN (Direct Interplanetary Trajectory Analysis), Massimiliano
@@ -135,11 +120,9 @@ def astrConstant(n: int)->float:
      AUTHOR:
        Matteo Ceriotti, 2006, MATLAB, astroConstants.m
     
-     PREVIOUS VERSION:
+     PREVIOUS VERSIONS:
        Matteo Ceriotti, 2006, MATLAB, astro_constants.m, Ver. 1.2
            - Header and function name in accordance with guidlines.
-    
-     CHANGELOG:
        26/10/2006, Camilla Colombo: Updated.
        22/10/2007, Camilla Colombo: astroConstants(8) added (Obliquity (angle)
            of the ecliptic at Epoch 2000).
@@ -153,8 +136,11 @@ def astrConstant(n: int)->float:
            References added.
        20/03/2013, REVISION, Francesca Letizia.
        22/03/2013, Francesca Letizia: all GM from DE405.
-       26/05/2022, Christian Di Lazzaro: conversion to Python function. It does not
-            accept a list as input anymore: transformed to single input-single output function.
+
+       CHANGELOG:
+       26/05/2022, Christian Di Lazzaro: MATLAB function converted to Python function.
+            It does not accept a list as input anymore: transformed into a single input-single
+            output function.
     
      ------------------------------------------------------------------------
 
